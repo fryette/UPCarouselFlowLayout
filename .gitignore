@@ -1,0 +1,42 @@
+# Autosave files
+*~
+
+# build
+[Oo]bj/
+[Bb]in/
+packages/
+TestResults/
+
+# globs
+sources/Makefile.in
+*.DS_Store
+*.sln.cache
+*.suo
+*.cache
+*.pidb
+*.userprefs
+*.usertasks
+sources/config.log
+sources/config.make
+sources/config.status
+sources/aclocal.m4
+sources/install-sh
+sources/autom4te.cache/
+*.user
+*.tar.gz
+sources/tarballs/
+sources/test-results/
+sources/Thumbs.db
+.vs/
+*.idea/
+
+# Mac bundle stuff
+*.dmg
+*.app
+
+# resharper
+*_Resharper.*
+*.Resharper
+
+# dotCover
+*.dotCover
