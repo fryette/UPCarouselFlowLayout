@@ -1,6 +1,8 @@
 UPCarouselFlowLayout
 ===============
 
+Port of [ink-spot/UPCarouselFlowLayout](https://github.com/ink-spot/UPCarouselFlowLayout) to Xamarin.iOS
+
 `UPCarouselFlowLayout` is a fancy carousel flow layout for `UICollectionView`. It comes with a paginated effect and it shrinks and makes transparent the side items.
 
 ![demo](images/demo.gif)
@@ -11,7 +13,7 @@ UPCarouselFlowLayout
 
 ## Installation
 
-### CocoaPods
+### NuGet
 
 `UPCarouselFlowLayout` is available through [Nuget](http://nuget.org). To install
 it, simply add the following line to your Podfile:
