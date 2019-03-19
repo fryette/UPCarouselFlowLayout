@@ -13,24 +13,16 @@ UPCarouselFlowLayout
 
 ### CocoaPods
 
-`UPCarouselFlowLayout` is available through [CocoaPods](http://cocoapods.org). To install
+`UPCarouselFlowLayout` is available through [Nuget](http://nuget.org). To install
 it, simply add the following line to your Podfile:
 
 ```
-pod "UPCarouselFlowLayout"
-```
-
-### Carthage
-
-Users can simply add to their Cartfile:
-
-```
-github "ink-spot/UPCarouselFlowLayout"
+Install-Package UPCarouselFlowLayout
 ```
 
 ### Manual
 
-Simply copy the folder `UPCarouselFlowLayout` to your project and import it in XCode.
+Simply copy the folder `UPCarouselFlowLayout` to your project and reference to the `UPCarouselFlowLayout.csproj`.
 
 ## Usage
 
@@ -38,21 +30,23 @@ Simply copy the folder `UPCarouselFlowLayout` to your project and import it in X
 
 ##### Via code
 
-```swift
-import UPCarouselFlowLayout
+```csharp
+using UPCarouselFlowLayout
 ```
 
-Create a `UPCarouselFlowLayout` object, set its `itemSize` and assign it to your `UICollectionView`.
+Create a `UPCarouselFlowLayout` object, set its `ItemSize` and assign it to your `UICollectionView`.
 
-```swift
-let layout = UPCarouselFlowLayout()
-layout.itemSize = CGSizeMake(200, 200)
-collectionView.collectionViewLayout = layout
+```csharp
+var layout = new UPCarouselFlowLayout
+{
+    ItemSize = new CGSize(200, 200)
+};
+CollectionView.CollectionViewLayout = layout;
 ```
 
 ##### Via Interface Builder
 
-Set the `UICollectionView` layout class to `UPCarouselFlowLayout`, and set its `itemSize` and its properties.
+Set the `UICollectionView` layout class to `UPCarouselFlowLayout`, and set its `ItemSize` and its properties.
 
 ![demo](images/ib_settings.png)
 
@@ -60,23 +54,23 @@ Set the `UICollectionView` layout class to `UPCarouselFlowLayout`, and set its `
 
 `UPCarouselFlowLayout` has a few customizable properties:
 
-* `sideItemScale` (between 0 and 1, default is 0.6)
+* `SideItemScale` (between 0 and 1, default is 0.6)
 *Can be set through code or via Interface Builder.*
 The shrinking ratio for collection items which are not in the center.
 
-* `sideItemAlpha` (between 0 and 1, default is 0.6)
+* `SideItemAlpha` (between 0 and 1, default is 0.6)
 *Can be set through code or via Interface Builder.*
 The opacity ratio for collection items which are not in the center.
 
-* `sideItemShift` (value in pixels, default is 0)
+* `SideItemShift` (value in pixels, default is 0)
 *Can be set through code or via Interface Builder.*
 A vertical/horizontal offset (depending on the collectionView scroll direction) for collection items which are not in the center.
 
-* `spacingMode` (default is fixed spacing of 40 pts)
-*Can be set only through code.*
-  * `UPCarouselFlowLayoutSpacingMode.fixed(spacing: CGFloat)`
+* `SpacingMode` (default is fixed spacing of 40 pts)
+*Can be set only through code.*(`SetSpacingMode`)
+  * `UPCarouselFlowLayoutSpacingMode.Fixed`
 Items in the carousel are positioned with a fixed space between them.
-  * `UPCarouselFlowLayoutSpacingMode.overlap(visibleOffset: CGFloat)`
+  * `UPCarouselFlowLayoutSpacingMode.Overlap`
 A fixed part of the side items are visible on the sides of the collection (and therefore the space between items depends on the collection size).
 
 
