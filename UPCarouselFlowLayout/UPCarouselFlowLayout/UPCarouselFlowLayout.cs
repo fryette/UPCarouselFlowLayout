@@ -16,10 +16,12 @@ namespace UPCarouselFlowLayout
     {
         public UPCarouselFlowLayout(IntPtr handle) : base(handle)
         {
-            SideItemScale = 0.6f;
-            SideItemAlpha = 0.6f;
-            SideItemShift = 0f;
-            _spacingMode = new UPCarouselFlowLayoutSpacingModeState(UPCarouselFlowLayoutSpacingMode.Fixed, 40f);
+            Initialize();
+        }
+
+        public UPCarouselFlowLayout()
+        {
+            Initialize();
         }
 
         [Export("sideItemScale"), Browsable(true)]
@@ -176,6 +178,14 @@ namespace UPCarouselFlowLayout
             }
 
             return targetContentOffset;
+        }
+
+        private void Initialize()
+        {
+            SideItemScale = 0.6f;
+            SideItemAlpha = 0.6f;
+            SideItemShift = 0f;
+            _spacingMode = new UPCarouselFlowLayoutSpacingModeState(UPCarouselFlowLayoutSpacingMode.Fixed, 40f);
         }
     }
 }
