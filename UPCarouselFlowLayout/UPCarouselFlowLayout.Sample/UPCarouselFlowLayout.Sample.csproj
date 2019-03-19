@@ -105,12 +105,6 @@
         <Compile Include="Character.cs" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\UPCarouselFlowLayout\UPCarouselFlowLayout.csproj">
-        <Project>{6B1E685E-943F-409C-A915-01384649AF15}</Project>
-        <Name>UPCarouselFlowLayout</Name>
-      </ProjectReference>
-    </ItemGroup>
-    <ItemGroup>
       <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
       <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png" />
       <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png" />
@@ -139,6 +133,12 @@
       <ImageAsset Include="Assets.xcassets\ratatouille.imageset\ratatouille.png" />
       <ImageAsset Include="Assets.xcassets\wall-e.imageset\Contents.json" />
       <ImageAsset Include="Assets.xcassets\wall-e.imageset\wall-e.png" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\UPCarouselFlowLayout\UPCarouselFlowLayout.csproj">
+        <Project>{6B1E685E-943F-409C-A915-01384649AF15}</Project>
+        <Name>UPCarouselFlowLayout</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

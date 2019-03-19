@@ -12,6 +12,16 @@
     <RootNamespace>UPCarouselFlowLayout</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>UPCarouselFlowLayout</AssemblyName>
+    <PackageId>UPCarouselFlowLayout</PackageId>
+    <PackageVersion>1.0</PackageVersion>
+    <Authors>Yauhen Sampir</Authors>
+    <Owners>Yauhen Sampir</Owners>
+    <PackageProjectUrl>https://github.com/fryette/UPCarouselFlowLayout</PackageProjectUrl>
+    <Summary> fancy carousel flow layout for UICollectionView. It comes with a paginated effect and it shrinks and makes transparent the side items.</Summary>
+    <PackageTags>carousel xamarin ios xamarin.ios FlowLayout CollectionView collectionview yauhen.sampir yauhen_sampir fryette</PackageTags>
+    <Title>UPCarouselFlowLayout</Title>
+    <Description> Fancy carousel flow layout for UICollectionView. It comes with a paginated effect and it shrinks and makes transparent the side items.</Description>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

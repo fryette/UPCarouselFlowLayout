@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>UPCarouselFlowLayout</id>
+        <version>1.0.0</version>
+        <authors>Yauhen Sampir</authors>
+        <owners>fryette</owners>
+        <projectUrl>https://github.com/fryette/UPCarouselFlowLayout</projectUrl>
+        <licenseUrl>https://github.com/fryette/UPCarouselFlowLayout/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <releaseNotes>Initial release</releaseNotes>
+        <description>Fancy carousel flow layout for UICollectionView. It comes with a paginated effect and it shrinks and makes transparent the side items</description>
+        <repository type="git" url="https://github.com/fryette/UPCarouselFlowLayout" />
+        <copyright>Copyright ©2019 Yauhen Sampir</copyright>
+        <tags>carousel xamarin ios xamarin.ios FlowLayout CollectionView collectionview fryette</tags>
+    </metadata>
+</package>
