@@ -50,7 +50,7 @@ CollectionView.CollectionViewLayout = layout;
 
 Set the `UICollectionView` layout class to `UPCarouselFlowLayout`, and set its `ItemSize` and its properties.
 
-![demo](images/ib_settings.png)
+<img src='images/ib_settings.png' width='500' />
 
 ### Properties
 
