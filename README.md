@@ -15,8 +15,7 @@ Port of [ink-spot/UPCarouselFlowLayout](https://github.com/ink-spot/UPCarouselFl
 
 ### NuGet
 
-`UPCarouselFlowLayout` is available through [Nuget](http://nuget.org). To install
-it, simply add the following line to your Podfile:
+`UPCarouselFlowLayout` is available through [Nuget](http://nuget.org). To install use next command or Nuget manager:
 
 ```
 Install-Package UPCarouselFlowLayout
